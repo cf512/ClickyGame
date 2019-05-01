@@ -1,0 +1,19 @@
+.navbar {
+  background: #6a1b9a;
+  height: 60px;
+}
+
+.navbar a {
+  color: black;
+  font-size: 1.3rem;
+  text-decoration: none;
+  margin: 5px;
+  line-height: 3;
+  font-weight: bold;
+}
+
+.navbar li {
+  display: inline-block;
+  width: 33.3%;
+  text-align: center;
+}
