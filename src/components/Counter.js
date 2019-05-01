@@ -55,22 +55,20 @@ class Counter extends React.Component {
         <div className="card-body">
           <p className="card-text">{this.state.count}</p>
         </div>
-        <div className="card">
-            <div className="img-container">
-              <button onClick={this.handleDecrement}>
-                <img alt="upset-ron" src="https://content.screencast.com/users/ConnorConnorF/folders/Snagit/media/2a0a71cc-12af-4599-a58d-a80804262bdc/2019-05-01_10-52-04.png" />
-              </button>
-            </div>
-          </div>
-        {rons.map(item => (
-          <div className="card">
-            <div className="img-container">
+        <ul>
+          <li>
+            <button onClick={this.handleDecrement}>
+              <img alt="upset-ron" src="https://content.screencast.com/users/ConnorConnorF/folders/Snagit/media/2a0a71cc-12af-4599-a58d-a80804262bdc/2019-05-01_10-52-04.png" />
+            </button>
+          </li>
+          {rons.map(item => (
+            <li>
               <button onClick={this.handleIncrement}>
                 <img key={item.id} alt={item.name} src={item.url} />
               </button>
-            </div>
-          </div>
-        ))}
+            </li>
+          ))}
+        </ul>
       </div>
     );
   }
