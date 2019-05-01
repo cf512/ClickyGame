@@ -12,7 +12,6 @@ function App() {
       <Header />
       <Section />
       <Counter />
-      {/* <List/> */}
     </div>
   );
 }
