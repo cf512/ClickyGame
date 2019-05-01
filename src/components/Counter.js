@@ -25,7 +25,7 @@ const rons = [
   {
     id: 6,
     url: "https://content.screencast.com/users/ConnorConnorF/folders/Snagit/media/ce075896-dd8e-4840-884c-518bd4a22d07/ron3.png",
-  }
+  },
 ];
 
 // By extending the React.Component class, Counter inherits functionality from it
@@ -41,6 +41,12 @@ class Counter extends React.Component {
     this.setState({ count: this.state.count + 1 });
   };
 
+  // handleIncrement increments this.state.count by 1
+  handleDecrement = () => {
+    // We always use the setState method to update a component's state
+    this.setState({ count: this.state.count - 1 });
+  };
+
   // The render method returns the JSX that should be rendered
   render() {
     return (
@@ -49,6 +55,13 @@ class Counter extends React.Component {
         <div className="card-body">
           <p className="card-text">{this.state.count}</p>
         </div>
+        <div className="card">
+            <div className="img-container">
+              <button onClick={this.handleDecrement}>
+                <img alt="upset-ron" src="https://content.screencast.com/users/ConnorConnorF/folders/Snagit/media/2a0a71cc-12af-4599-a58d-a80804262bdc/2019-05-01_10-52-04.png" />
+              </button>
+            </div>
+          </div>
         {rons.map(item => (
           <div className="card">
             <div className="img-container">

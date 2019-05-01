@@ -19,7 +19,7 @@ const styles = {
 function Section() {
   return (
     <section style={styles.sectionStyles} className="section">
-      <h2>Click on a Ron to score. And you stay classy, San Diego.</h2>
+      <h2>Click on a Ron to score points.<br />But don't click on the upset Ron or you'll lose points.<br />And you stay classy, San Diego.</h2>
     </section>
   );
 }
