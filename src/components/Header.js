@@ -22,7 +22,7 @@ const styles = {
 function Header() {
   return (
     <header style={styles.headerStyle} className="header">
-      <h1 style={styles.headingStyle}>The Burgundy Clicky Game!</h1>
+      <h1 style={styles.headingStyle}>The Burgundy Click Game!</h1>
     </header>
   );
 }
