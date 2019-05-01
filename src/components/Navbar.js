@@ -11,6 +11,7 @@ import "../styles/Navbar.css";
 const styles = {
   navbarStyle: {
     background: "LightSkyBlue",
+    justifyContent: "center"
   }
 };
 
