@@ -3,6 +3,7 @@ import './App.css';
 import Header from "./components/Header";
 import Section from "./components/Section";
 import Navbar from "./components/Navbar";
+import Counter from "./components/Counter";
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
       <Navbar />
       <Header />
       <Section />
+      <Counter />
+      {/* <List/> */}
     </div>
   );
 }
